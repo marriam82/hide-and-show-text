@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>Document</title>
+</head>
+<body>
+          <h1 id="hd">vvork</h1>
+          <button id="bth" onclick="myfunction()">Click Me</button>
+</body>
+<script>
+          var i=1;
+          function myfunction(){
+          if(i==1)
+          {
+                    document.getElementById("hd").innerHTML="Hi People"
+                    document.getElementById("hd").style.color="pink"
+                    document.getElementById("hd").style.visibility="hidden"
+                    document.getElementById("bth").innerHTML="hide"
+                    i=0;
+          }
+          else if(i==0){
+                    document.getElementById("hd").style.visibility="visible"
+                    document.getElementById("bth").innerHTML="show"
+                    document.getElementById("hd").innerHTML="Hi People"
+                    i=1;
+          }
+          }
+
+</script>
+</html>
